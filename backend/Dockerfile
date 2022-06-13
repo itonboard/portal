@@ -14,7 +14,7 @@ RUN apt-get update \
     && apt-get -y upgrade -y \
     && ./bin/pip install pyyaml \
     && sed -i 's/\[test\]/\[production\]/g' requirements.txt \
-    && git config --global url."https://gitlab-ci-token:${CI_JOB_TOKEN}@git.akbild.ac.at".insteadOf ssh://git@git.akbild.ac.at \
+    && git config --global url."https://gitlab-ci-token:${CI_JOB_TOKEN}@git.bluedynamics.eu".insteadOf ssh://git@git.bluedynamics.eu \
     && make VENV=off VENV_FOLDER=. instance \
     && chown -R plone.plone instance/var \
     && find . -name LC_MESSAGES -exec chown plone.plone {} + \
