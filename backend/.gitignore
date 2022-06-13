@@ -3,6 +3,7 @@
 /devsrc/
 /pkgs/
 /venv/
+/build/
 /.make-sentinels/
 *-mxdev.txt
 *.egg-info

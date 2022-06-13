@@ -38,7 +38,10 @@
   },
   "private": false,
   "workspaces": [],
-  "addons": ["volto-slate:minimalDefault,simpleLink,tableButton"],
+  "addons": [
+    "volto-slate:minimalDefault,simpleLink,tableButton",
+    "@eeacms/volto-banner"
+  ],
   "jest": {
     "modulePathIgnorePatterns": [
       "api"
@@ -139,7 +142,8 @@
   },
   "dependencies": {
     "@plone/volto": "15.12.1",
-    "volto-slate": "*"
+    "volto-slate": "*",
+    "@eeacms/volto-banner": "^2.0.0"
 },
   "devDependencies": {
     "eslint-plugin-prettier": "3.1.3",

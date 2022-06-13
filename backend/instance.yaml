@@ -14,6 +14,6 @@ default_context:
     initial_user_password: admin
     debug_mode: on
     load_zcml:
-        package_includes: []
+        package_includes: ["itonboard.portal"]
         package_overrides: []
     db_storage: direct
