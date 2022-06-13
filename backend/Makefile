@@ -33,7 +33,7 @@ endif
 ##############################################################################
 # SETTINGS AND VARIABLE
 # adjust to your project needs
-PROJECT_NAME=akbild.portal
+PROJECT_NAME=itonboard.portal
 IMAGE_NAME=${PROJECT_NAME}
 CONSTRAINTS=constraints.txt
 PIP_REQUIREMENTS_IN_FILE=requirements.txt
@@ -62,7 +62,7 @@ RUN_PREREQUISITES=${INSTANCE_TARGET}
 
 # install and run
 .PHONY: all # full install, test and run
-all:style testrun
+all:style test run
 
 # Add the following 'help' target to your Makefile
 # And add help text after each target name starting with '\#\#'
@@ -161,7 +161,7 @@ ${PREPARE_PREREQUISITES}:
 
 ${PREPARE_TARGET}: ${MXDEV_SENTINEL} ${PREPARE_PREREQUISITES}
 	@echo "$(OK_COLOR)Prepare sources and dependencies$(NO_COLOR)"
-	@${PYBIN}mxdev -c sources.ini
+	@${PYBIN}mxdev -c mx.ini
 
 .PHONY: install
 install: ${INSTALL_TARGET} ## pip install all dependencies and scripts
@@ -177,7 +177,7 @@ ${INSTALL_TARGET}: ${PREPARE_TARGET}
 COOKIECUTTER_SENTINEL=${SENTINELFOLDER}pip-cookiecutter.sentinel
 ${COOKIECUTTER_SENTINEL}:
 	@echo "$(OK_COLOR)Install cookiecutter$(NO_COLOR)"
-	@${PYBIN}pip install "cookiecutter>=2.0.1"
+	@${PYBIN}pip install "cookiecutter>=2.1.1"
 	@touch ${COOKIECUTTER_SENTINEL}
 
 ${INSTANCE_YAML}:
@@ -203,12 +203,12 @@ ${TESTRUNNER_SENTINEL}: ${PIP_SENTINEL}
 .PHONY: test
 test: ${TEST_PREREQUISITES} ${TESTRUNNER_SENTINEL} ## run tests
 	@echo "$(OK_COLOR)Run addon tests$(NO_COLOR)"
-	@${PYBIN}zope-testrunner --auto-color --auto-progress --test-path=${ADDONFOLDER} --test-path=sources/akbild.event/src
+	@${PYBIN}zope-testrunner --auto-color --auto-progress --test-path=${ADDONFOLDER}
 
 .PHONY: test-ignore-warnings
-test-ignore-warnings: ${TEST_PREREQUISITES} ${TESTRUNNER_SENTINEL}  ## run tests (hide warnins)
+test-ignore-warnings: ${TEST_PREREQUISITES} ${TESTRUNNER_SENTINEL}  ## run tests (hide warnings)
 	@echo "$(OK_COLOR)Run addon tests$(NO_COLOR)"
-	@PYTHONWARNINGS=ignore ${PYBIN}zope-testrunner --auto-color --auto-progress --test-path=${ADDONFOLDER} --test-path=sources/akbild.event/src
+	@PYTHONWARNINGS=ignore ${PYBIN}zope-testrunner --auto-color --auto-progress --test-path=${ADDONFOLDER}
 
 ##############################################################################
 # CODE FORMATTING
