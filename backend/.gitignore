@@ -1,0 +1,15 @@
+/instance/
+/sources/
+/devsrc/
+/pkgs/
+/venv/
+/.make-sentinels/
+*-mxdev.txt
+*.egg-info
+.installed.txt
+.has_cookiecutter
+__pycache__
+*-dev.txt
+*.pyc
+*.mo
+*.zexp
