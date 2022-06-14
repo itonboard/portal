@@ -1,6 +1,13 @@
 {
     "compilerOptions": {
-        "paths": {},
+        "paths": {
+            "@itonboard/volto-download-block": [
+                "addons/volto-download-block/src"
+            ],
+            "@itonboard/volto-itonboard-theme": [
+                "addons/volto-itonboard-theme/src"
+            ]
+        },
         "baseUrl": "src"
     }
 }

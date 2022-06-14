@@ -1,1 +1,14 @@
-{}
+{
+  "volto-download-block": {
+    "url": "git@github.com:itonboard/volto-download-block.git",
+    "path": "src",
+    "package": "@itonboard/volto-download-block",
+    "branch": "master"
+  },
+  "volto-itonboard-theme": {
+    "url": "git@github.com:itonboard/volto-itonboard-theme.git",
+    "path": "src",
+    "package": "@itonboard/volto-itonboard-theme",
+    "branch": "master"
+  }
+}
