@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="akbild.sync"
+    >
+
+  <!-- <i18n:registerTranslations directory="locales" /> -->
+
+  <genericsetup:registerProfile
+      name="default"
+      title="ITONBOARD - Portal"
+      description="Installs the itonboard.portal add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/default"
+      post_handler=".setuphandlers.post_install"
+      />
+
+</configure>

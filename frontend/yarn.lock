@@ -2298,6 +2298,11 @@
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.6.tgz#d5e0706cf8c6acd8c6032f8d54070af261bbbb2f"
   integrity sha512-ws57AidsDvREKrZKYffXddNkyaF14iHNHm8VQnZH6t99E8gczjNN0GpvcGny0imC80yQ0tHz1xVUKk/KFQSUyA==
 
+"@eeacms/volto-banner@^2.0.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@eeacms/volto-banner/-/volto-banner-2.2.0.tgz#148071fb336def1b2c284948e387008bdafb92f9"
+  integrity sha512-J3sL/YOnxP4FuWJdLeMs4NsJHoRpRE6PGyd6krDkMh91JUiAY7LH00yABbsLbW2W5HFtttTIwVu8crSTWQhNFA==
+
 "@eeacms/volto-object-widget@*":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@eeacms/volto-object-widget/-/volto-object-widget-4.0.1.tgz#5fb8848f090c6a10a01e72889776bdb149dfbbd3"

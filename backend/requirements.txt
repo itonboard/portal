@@ -1,3 +1,2 @@
 -c constraints.txt
-waitress_fastlisten
-Plone
+-e .[test]

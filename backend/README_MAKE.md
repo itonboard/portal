@@ -64,7 +64,7 @@ They aim to ease development and deployment of *Plone 6+*
     The configuration for *make*
 `requirement.txt`
     The core requirements.
-`sources.ini`
+`mx.ini`
     *mxdev* is used to develop with sources from VCS like Git.
     If you need sources from git, add them here.
 

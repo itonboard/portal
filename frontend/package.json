@@ -43,6 +43,7 @@
   ],
   "addons": [
     "volto-slate:minimalDefault,simpleLink,tableButton",
+    "@eeacms/volto-banner",
     "@itonboard/volto-download-block",
     "@itonboard/volto-itonboard-theme"
   ],
@@ -147,6 +148,7 @@
   "dependencies": {
     "@plone/volto": "15.12.1",
     "volto-slate": "*",
+    "@eeacms/volto-banner": "^2.0.0",
     "@itonboard/volto-download-block": "*",
     "@itonboard/volto-itonboard-theme": "*"
 },
