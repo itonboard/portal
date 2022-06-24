@@ -43,6 +43,8 @@
   ],
   "addons": [
     "volto-slate:minimalDefault,simpleLink,tableButton",
+    "@eeacms/volto-accordion-block",
+    "@eeacms/volto-columns-block",
     "@eeacms/volto-banner",
     "@itonboard/volto-download-block",
     "@itonboard/volto-itonboard-theme"
@@ -147,7 +149,9 @@
   },
   "dependencies": {
     "@plone/volto": "15.12.1",
-    "volto-slate": "*",
+    "volto-slate": "6.2.0",
+    "@eeacms/volto-accordion-block": "3.4.16",
+    "@eeacms/volto-columns-block": "4.5.0",
     "@eeacms/volto-banner": "^2.0.0",
     "@itonboard/volto-download-block": "*",
     "@itonboard/volto-itonboard-theme": "*"
