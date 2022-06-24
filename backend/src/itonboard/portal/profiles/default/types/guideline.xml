@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object name="guideline" meta_type="Dexterity FTI" i18n:domain="plone"
+   xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+ <property name="title" i18n:translate="">Guideline</property>
+ <property name="description" i18n:translate=""/>
+ <property name="icon_expr">string:file-earmark-text</property>
+ <property name="factory">guideline</property>
+ <property
+    name="add_view_expr">string:${folder_url}/++add++guideline</property>
+ <property name="link_target"/>
+ <property name="immediate_view">view</property>
+ <property name="global_allow">True</property>
+ <property name="filter_content_types">True</property>
+ <property name="allowed_content_types">
+  <element value="chapter"/>
+  <element value="Image"/>
+ </property>
+ <property name="allow_discussion">False</property>
+ <property name="default_view">view</property>
+ <property name="view_methods">
+  <element value="view"/>
+ </property>
+ <property name="default_view_fallback">False</property>
+ <property name="add_permission">cmf.AddPortalContent</property>
+ <property name="klass">plone.dexterity.content.Container</property>
+ <property name="behaviors">
+  <element value="plone.dublincore"/>
+  <element value="plone.namefromtitle"/>
+  <element value="plone.allowdiscussion"/>
+  <element value="plone.excludefromnavigation"/>
+  <element value="plone.constraintypes"/>
+  <element value="plone.locking"/>
+  <element value="plone.relateditems"/>
+  <element value="plone.shortname"/>
+  <element value="plone.tableofcontents"/>
+ </property>
+ <property name="schema"/>
+ <property
+    name="model_source">&lt;model xmlns:i18n=&quot;http://xml.zope.org/namespaces/i18n&quot; xmlns:marshal=&quot;http://namespaces.plone.org/supermodel/marshal&quot; xmlns:indexer=&quot;http://namespaces.plone.org/supermodel/indexer&quot; xmlns:form=&quot;http://namespaces.plone.org/supermodel/form&quot; xmlns:security=&quot;http://namespaces.plone.org/supermodel/security&quot; xmlns:users=&quot;http://namespaces.plone.org/supermodel/users&quot; xmlns:lingua=&quot;http://namespaces.plone.org/supermodel/lingua&quot; xmlns=&quot;http://namespaces.plone.org/supermodel/schema&quot;&gt;
+    &lt;schema&gt;
+      &lt;fieldset name=&quot;layout&quot; label=&quot;Layout&quot;&gt;
+        &lt;field name=&quot;blocks&quot; type=&quot;plone.schema.jsonfield.JSONField&quot;&gt;
+          &lt;default&gt;{&#x27;08133a69-1d3b-48cf-a817-e86ec50bbe04&#x27;: {&#x27;@type&#x27;: &#x27;slate&#x27;, &#x27;fixed&#x27;: True, &#x27;placeholder&#x27;: &#x27;Headline&#x27;, &#x27;plaintext&#x27;: &#x27;&#x27;, &#x27;required&#x27;: True, &#x27;value&#x27;: [{&#x27;children&#x27;: [{&#x27;text&#x27;: &#x27;&#x27;}], &#x27;type&#x27;: &#x27;h2&#x27;}]}, &#x27;1e1cdfca-d842-410b-b618-b1d5ca49560f&#x27;: {&#x27;@type&#x27;: &#x27;listing&#x27;, &#x27;block&#x27;: &#x27;1e1cdfca-d842-410b-b618-b1d5ca49560f&#x27;, &#x27;fixed&#x27;: True, &#x27;query&#x27;: [], &#x27;required&#x27;: True, &#x27;variation&#x27;: &#x27;default&#x27;, &#x27;querystring&#x27;: {&#x27;query&#x27;: [{&#x27;i&#x27;: &#x27;portal_type&#x27;, &#x27;o&#x27;: &#x27;plone.app.querystring.operation.selection.any&#x27;, &#x27;v&#x27;: [&#x27;chapter&#x27;]}], &#x27;sort_order&#x27;: &#x27;ascending&#x27;}}, &#x27;58732ad8-0dcf-46c7-a257-56728f61e7e4&#x27;: {&#x27;@type&#x27;: &#x27;slate&#x27;, &#x27;fixed&#x27;: True, &#x27;placeholder&#x27;: &#x27;Foreword&#x27;, &#x27;plaintext&#x27;: &#x27;&#x27;, &#x27;required&#x27;: True, &#x27;value&#x27;: [{&#x27;children&#x27;: [{&#x27;text&#x27;: &#x27;&#x27;}], &#x27;type&#x27;: &#x27;p&#x27;}]}, &#x27;75d36415-c006-467c-8941-f6aac17244e0&#x27;: {&#x27;@type&#x27;: &#x27;slate&#x27;, &#x27;fixed&#x27;: True, &#x27;placeholder&#x27;: &#x27;Teaserheadline&#x27;, &#x27;plaintext&#x27;: &#x27;&#x27;, &#x27;required&#x27;: True, &#x27;value&#x27;: [{&#x27;children&#x27;: [{&#x27;text&#x27;: &#x27;&#x27;}], &#x27;type&#x27;: &#x27;h3&#x27;}]}, &#x27;7e51b062-99db-43fc-a935-e260cc8b35ea&#x27;: {&#x27;@type&#x27;: &#x27;columnsBlock&#x27;, &#x27;data&#x27;: {&#x27;blocks&#x27;: {&#x27;7564a2de-41b0-4bf0-8897-274b06e742cc&#x27;: {&#x27;blocks&#x27;: {&#x27;1bd8e7bd-7229-4667-a34e-85709af3d20d&#x27;: {&#x27;@type&#x27;: &#x27;slate&#x27;, &#x27;fixed&#x27;: False, &#x27;placeholder&#x27;: &#x27;Teasertext&#x27;, &#x27;plaintext&#x27;: &#x27;&#x27;, &#x27;required&#x27;: True, &#x27;value&#x27;: [{&#x27;children&#x27;: [{&#x27;text&#x27;: &#x27;&#x27;}], &#x27;type&#x27;: &#x27;p&#x27;}]}}, &#x27;blocks_layout&#x27;: {&#x27;items&#x27;: [&#x27;1bd8e7bd-7229-4667-a34e-85709af3d20d&#x27;]}}, &#x27;ef2657c0-4af2-41b0-b229-bd5ce7b90e8d&#x27;: {&#x27;blocks&#x27;: {&#x27;f005a12a-5d30-4610-ba8f-af7915d20fda&#x27;: {&#x27;@type&#x27;: &#x27;image&#x27;, &#x27;placeholder&#x27;: &#x27;Picture&#x27;, &#x27;required&#x27;: True}}, &#x27;blocks_layout&#x27;: {&#x27;items&#x27;: [&#x27;f005a12a-5d30-4610-ba8f-af7915d20fda&#x27;]}}}, &#x27;blocks_layout&#x27;: {&#x27;items&#x27;: [&#x27;7564a2de-41b0-4bf0-8897-274b06e742cc&#x27;, &#x27;ef2657c0-4af2-41b0-b229-bd5ce7b90e8d&#x27;]}}, &#x27;fixed&#x27;: True, &#x27;fixedLayout&#x27;: True, &#x27;gridCols&#x27;: [&#x27;twoThirds&#x27;, &#x27;oneThird&#x27;], &#x27;gridSize&#x27;: 12, &#x27;required&#x27;: True}, &#x27;9dee1076-8778-4039-bfd9-f3f7551524b1&#x27;: {&#x27;@type&#x27;: &#x27;title&#x27;, &#x27;fixed&#x27;: True, &#x27;placeholder&#x27;: &#x27;Guideline Title&#x27;, &#x27;required&#x27;: True}, &#x27;ba1fa318-ded6-4ca0-9a93-385dd1375845&#x27;: {&#x27;@type&#x27;: &#x27;slate&#x27;, &#x27;fixed&#x27;: True, &#x27;placeholder&#x27;: &#x27;Afterword&#x27;, &#x27;plaintext&#x27;: &#x27;&#x27;, &#x27;required&#x27;: True, &#x27;value&#x27;: [{&#x27;children&#x27;: [{&#x27;text&#x27;: &#x27;&#x27;}], &#x27;type&#x27;: &#x27;p&#x27;}]}, &#x27;d3ff6803-3336-4b0e-a7b6-9020f0925cf9&#x27;: {&#x27;@type&#x27;: &#x27;slate&#x27;, &#x27;plaintext&#x27;: &#x27;&#x27;, &#x27;value&#x27;: [{&#x27;children&#x27;: [{&#x27;text&#x27;: &#x27;&#x27;}], &#x27;type&#x27;: &#x27;p&#x27;}]}, &#x27;d9050cb6-9b14-43a9-8cf7-517374c426d1&#x27;: {&#x27;@type&#x27;: &#x27;slate&#x27;, &#x27;fixed&#x27;: True, &#x27;plaintext&#x27;: &#x27;Chapter Navigation&#x27;, &#x27;readOnly&#x27;: False, &#x27;required&#x27;: True, &#x27;value&#x27;: [{&#x27;children&#x27;: [{&#x27;text&#x27;: &#x27;Chapter Navigation&#x27;}], &#x27;type&#x27;: &#x27;h3&#x27;}]}}&lt;/default&gt;
+          &lt;description/&gt;
+          &lt;required&gt;False&lt;/required&gt;
+          &lt;title&gt;Blocks&lt;/title&gt;
+        &lt;/field&gt;
+        &lt;field name=&quot;blocks_layout&quot; type=&quot;plone.schema.jsonfield.JSONField&quot;&gt;
+          &lt;default&gt;{&#x27;items&#x27;: [&#x27;9dee1076-8778-4039-bfd9-f3f7551524b1&#x27;, &#x27;d9050cb6-9b14-43a9-8cf7-517374c426d1&#x27;, &#x27;1e1cdfca-d842-410b-b618-b1d5ca49560f&#x27;, &#x27;75d36415-c006-467c-8941-f6aac17244e0&#x27;, &#x27;7e51b062-99db-43fc-a935-e260cc8b35ea&#x27;, &#x27;08133a69-1d3b-48cf-a817-e86ec50bbe04&#x27;, &#x27;58732ad8-0dcf-46c7-a257-56728f61e7e4&#x27;, &#x27;d3ff6803-3336-4b0e-a7b6-9020f0925cf9&#x27;, &#x27;ba1fa318-ded6-4ca0-9a93-385dd1375845&#x27;]}&lt;/default&gt;
+          &lt;description/&gt;
+          &lt;required&gt;False&lt;/required&gt;
+          &lt;title&gt;Blocks Layout&lt;/title&gt;
+        &lt;/field&gt;
+      &lt;/fieldset&gt;
+    &lt;/schema&gt;
+  &lt;/model&gt;</property>
+ <property name="model_file"/>
+ <property name="schema_policy">dexterity</property>
+ <alias from="(Default)" to="(dynamic view)"/>
+ <alias from="edit" to="@@edit"/>
+ <alias from="sharing" to="@@sharing"/>
+ <alias from="view" to="(selected layout)"/>
+ <action title="View" action_id="view" category="object" condition_expr=""
+    icon_expr="" link_target="" url_expr="string:${object_url}"
+    visible="True">
+  <permission value="View"/>
+ </action>
+ <action title="Edit" action_id="edit" category="object" condition_expr=""
+    icon_expr="" link_target="" url_expr="string:${object_url}/edit"
+    visible="True">
+  <permission value="Modify portal content"/>
+ </action>
+</object>
