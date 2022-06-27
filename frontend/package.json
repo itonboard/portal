@@ -39,6 +39,7 @@
   "private": true,
   "workspaces": [
     "src/addons/volto-download-block",
+    "src/addons/volto-quote-block",
     "src/addons/volto-itonboard-theme"
   ],
   "addons": [
@@ -46,7 +47,9 @@
     "@eeacms/volto-accordion-block",
     "@eeacms/volto-columns-block",
     "@eeacms/volto-banner",
+    "@codesyntax/volto-featured-block",
     "@itonboard/volto-download-block",
+    "@itonboard/volto-quote-block",
     "@itonboard/volto-itonboard-theme"
   ],
   "jest": {
@@ -153,6 +156,7 @@
     "@eeacms/volto-accordion-block": "3.4.16",
     "@eeacms/volto-columns-block": "4.5.0",
     "@eeacms/volto-banner": "^2.0.0",
+    "@codesyntax/volto-featured-block": "0.5.0",
     "@itonboard/volto-download-block": "*",
     "@itonboard/volto-itonboard-theme": "*"
 },
