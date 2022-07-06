@@ -6,6 +6,9 @@
             ],
             "@itonboard/volto-itonboard-theme": [
                 "addons/volto-itonboard-theme/src"
+            ],
+            "@itonboard/volto-quote-block": [
+                "addons/volto-quote-block/src"
             ]
         },
         "baseUrl": "src"

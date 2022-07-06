@@ -10,5 +10,11 @@
     "path": "src",
     "package": "@itonboard/volto-itonboard-theme",
     "branch": "master"
+  },
+  "volto-quote-block": {
+    "url": "git@github.com:itonboard/volto-quote-block.git",
+    "path": "src",
+    "package": "@itonboard/volto-quote-block",
+    "branch": "master"
   }
 }
